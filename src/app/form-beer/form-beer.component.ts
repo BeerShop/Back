@@ -7,8 +7,10 @@ import { Component, OnInit } from '@angular/core';
 export class FormBeerComponent implements OnInit {
     imagem = "";
     tipos = [
-      {nome: 'x', valor: 'x'},
-      {nome: 'y', valor: 'y'},
+      {nome: 'Lager', valor: 'Lager'},
+      {nome: 'Pilsen', valor: 'Pilsen'},
+      {nome: 'Bock', valor: 'Bock'},
+      {nome: 'Ale', valor: 'Ale'},
     ];
   constructor() { }
 
