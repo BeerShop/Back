@@ -1,0 +1,47 @@
+ <div class="main-cover">
+  <div class="row">
+    <div class="col-sm-6 col-sm-offset-3 padding-bottom-50">
+      <div class="panel panel-default">
+          <div class="panel-heading">
+              Cadastro de Cerveja
+          </div>
+        <div class="panel-body">
+          <form>
+            <div class="form-group">
+              
+              <input type="text" placeholder="Marca" class="form-control"/>
+            </div>
+            <div class="form-group">
+              
+              <input type="text" placeholder="Nome" class="form-control" required="required"/>
+            </div>
+            <div class="form-group">
+              
+                <input type="text" placeholder="Código do Produto" class="form-control" required="required"/>
+            </div>
+            <div class="form-group">
+              
+              <select class="form-control" id="select">
+                <option value="" disabled >--Selecione--</option>
+                <option *ngFor="let tipo of tipos" value="{{tipo.valor}}">{{tipo.nome}}</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <div class="file-input">
+                <label placeholder="Carregue imagem da bebida">
+                  <div class="input">
+                    <i class="fa fa-upload"></i>
+                    <input (change)="uploadImg($event)" type="file" id="file" multiple="multiple">
+                    <div class="file-input-selected"></div>
+                  </div>
+                </label>
+              </div>
+              <img src="{{imagem}}" alt="" width="300">
+            </div>
+
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

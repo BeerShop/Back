@@ -15,6 +15,7 @@ import { BeersComponent } from './beers/beers.component';
 import { BeerComponent } from './beers/beer/beer.component';
 import { BeersServices } from './beers/beers.service';
 import { HttpClientModule } from '@angular/common/http';
+import { FormBeerComponent } from './form-beer/form-beer.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { HttpClientModule } from '@angular/common/http';
     LoginComponent,
     ErrorPageComponent,
     BeersComponent,
-    BeerComponent
+    BeerComponent,
+    FormBeerComponent
   ],
   imports: [
     BrowserModule,
