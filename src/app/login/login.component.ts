@@ -11,14 +11,4 @@ export class LoginComponent implements OnInit {
   ngOnInit() {
   }
 
-fazerLogin(): void{
-    this.loginService.loginIn(this.usuario).subscribe(data => {
-      if(data['_body']){
-        let ret = JSON.parse(data['_body']);
-        this.authService.setToken(ret.token);
-        this.authService.loginIn = true;
-        this.router.navigate(['home']);
-      }
-    });
-}
 }

@@ -1,1 +1,1 @@
-export const BEERS_API = 'http://www.beershop.somee.com/api/cerveja'
+export const BEERS_API = 'http://jogos.somee.com/api/jogos'

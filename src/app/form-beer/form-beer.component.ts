@@ -1,7 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
-import { BEERS_API } from '../app.api';
-import { Beer } from './beer-model-form';
 
 @Component({
   selector: 'app-form-beer',
@@ -15,7 +12,7 @@ export class FormBeerComponent implements OnInit {
       {nome: 'Bock', valor: 'Bock'},
       {nome: 'Ale', valor: 'Ale'},
     ];
-  constructor(private httpClient: HttpClient) { }
+  constructor() { }
 
   ngOnInit() {
   }
@@ -35,10 +32,6 @@ export class FormBeerComponent implements OnInit {
     fileReader.readAsDataURL(file);
     
     console.log(this.imagem);
-  }
-
-  onCadastro(){
-    this.httpClient.post(`${BEERS_API}`,<Beer[]>).subscribe
   }
 
 }
